@@ -34,7 +34,7 @@ void main() {
       expect(res, 2396450);
     });
     test('verify getHash', () async {
-      when(mockBlockchain.getBlockHash(height: any)).thenAnswer((_) async =>
+      when(mockBlockchain.getBlockHash(height: anyNamed('height'))).thenAnswer((_) async =>
           "0000000000004c01f2723acaa5e87467ebd2768cc5eadcf1ea0d0c4f1731efce");
       final res = await mockBlockchain.getBlockHash(height: 2396450);
       expect(res,
@@ -48,7 +48,7 @@ void main() {
       expect(res, 2396450);
     });
     test('verify getHash', () async {
-      when(mockBlockchain.getBlockHash(height: any)).thenAnswer((_) async =>
+      when(mockBlockchain.getBlockHash(height: anyNamed('height'))).thenAnswer((_) async =>
           "0000000000004c01f2723acaa5e87467ebd2768cc5eadcf1ea0d0c4f1731efce");
       final res = await mockBlockchain.getBlockHash(height: 2396450);
       expect(res,
@@ -84,7 +84,7 @@ void main() {
       expect(res, isA<Descriptor>());
     });
     test('Should return an empty list of TransactionDetails', () async {
-      when(mockWallet.listTransactions(includeRaw: any))
+      when(mockWallet.listTransactions(includeRaw: anyNamed('includeRaw')))
           .thenAnswer((e) => List.empty());
       final res = mockWallet.listTransactions(includeRaw: true);
       expect(res, isA<List<TransactionDetails>>());
@@ -303,15 +303,15 @@ void main() {
     });
     test('verify weight', () async {
       final res = mockTx.weight();
-      expect(res, isA<int>());
+      expect(res, isA<BigInt>());
     });
     test('verify size', () async {
       final res = mockTx.size();
-      expect(res, isA<int>());
+      expect(res, isA<BigInt>());
     });
     test('verify vsize', () async {
       final res = mockTx.vsize();
-      expect(res, isA<int>());
+      expect(res, isA<BigInt>());
     });
     test('verify isCoinbase', () async {
       final res = mockTx.isCoinBase();
@@ -331,7 +331,7 @@ void main() {
     });
     test('verify lockTime', () async {
       final res = mockTx.lockTime();
-      expect(res, isA<int>());
+      expect(res, isA<LockTime>());
     });
     test('verify input', () async {
       final res = mockTx.input();

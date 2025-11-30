@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -41,6 +40,142 @@ class $AuthCopyWith<$Res>  {
 $AuthCopyWith(Auth _, $Res Function(Auth) __);
 }
 
+
+/// Adds pattern-matching-related methods to [Auth].
+extension AuthPatterns on Auth {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Auth_None value)?  none,TResult Function( Auth_UserPass value)?  userPass,TResult Function( Auth_Cookie value)?  cookie,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case Auth_None() when none != null:
+return none(_that);case Auth_UserPass() when userPass != null:
+return userPass(_that);case Auth_Cookie() when cookie != null:
+return cookie(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Auth_None value)  none,required TResult Function( Auth_UserPass value)  userPass,required TResult Function( Auth_Cookie value)  cookie,}){
+final _that = this;
+switch (_that) {
+case Auth_None():
+return none(_that);case Auth_UserPass():
+return userPass(_that);case Auth_Cookie():
+return cookie(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Auth_None value)?  none,TResult? Function( Auth_UserPass value)?  userPass,TResult? Function( Auth_Cookie value)?  cookie,}){
+final _that = this;
+switch (_that) {
+case Auth_None() when none != null:
+return none(_that);case Auth_UserPass() when userPass != null:
+return userPass(_that);case Auth_Cookie() when cookie != null:
+return cookie(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  none,TResult Function( String username,  String password)?  userPass,TResult Function( String file)?  cookie,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case Auth_None() when none != null:
+return none();case Auth_UserPass() when userPass != null:
+return userPass(_that.username,_that.password);case Auth_Cookie() when cookie != null:
+return cookie(_that.file);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  none,required TResult Function( String username,  String password)  userPass,required TResult Function( String file)  cookie,}) {final _that = this;
+switch (_that) {
+case Auth_None():
+return none();case Auth_UserPass():
+return userPass(_that.username,_that.password);case Auth_Cookie():
+return cookie(_that.file);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  none,TResult? Function( String username,  String password)?  userPass,TResult? Function( String file)?  cookie,}) {final _that = this;
+switch (_that) {
+case Auth_None() when none != null:
+return none();case Auth_UserPass() when userPass != null:
+return userPass(_that.username,_that.password);case Auth_Cookie() when cookie != null:
+return cookie(_that.file);case _:
+  return null;
+
+}
+}
+
+}
 
 /// @nodoc
 
@@ -240,6 +375,142 @@ class $BlockchainConfigCopyWith<$Res>  {
 $BlockchainConfigCopyWith(BlockchainConfig _, $Res Function(BlockchainConfig) __);
 }
 
+
+/// Adds pattern-matching-related methods to [BlockchainConfig].
+extension BlockchainConfigPatterns on BlockchainConfig {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( BlockchainConfig_Electrum value)?  electrum,TResult Function( BlockchainConfig_Esplora value)?  esplora,TResult Function( BlockchainConfig_Rpc value)?  rpc,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case BlockchainConfig_Electrum() when electrum != null:
+return electrum(_that);case BlockchainConfig_Esplora() when esplora != null:
+return esplora(_that);case BlockchainConfig_Rpc() when rpc != null:
+return rpc(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( BlockchainConfig_Electrum value)  electrum,required TResult Function( BlockchainConfig_Esplora value)  esplora,required TResult Function( BlockchainConfig_Rpc value)  rpc,}){
+final _that = this;
+switch (_that) {
+case BlockchainConfig_Electrum():
+return electrum(_that);case BlockchainConfig_Esplora():
+return esplora(_that);case BlockchainConfig_Rpc():
+return rpc(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( BlockchainConfig_Electrum value)?  electrum,TResult? Function( BlockchainConfig_Esplora value)?  esplora,TResult? Function( BlockchainConfig_Rpc value)?  rpc,}){
+final _that = this;
+switch (_that) {
+case BlockchainConfig_Electrum() when electrum != null:
+return electrum(_that);case BlockchainConfig_Esplora() when esplora != null:
+return esplora(_that);case BlockchainConfig_Rpc() when rpc != null:
+return rpc(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( ElectrumConfig config)?  electrum,TResult Function( EsploraConfig config)?  esplora,TResult Function( RpcConfig config)?  rpc,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case BlockchainConfig_Electrum() when electrum != null:
+return electrum(_that.config);case BlockchainConfig_Esplora() when esplora != null:
+return esplora(_that.config);case BlockchainConfig_Rpc() when rpc != null:
+return rpc(_that.config);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( ElectrumConfig config)  electrum,required TResult Function( EsploraConfig config)  esplora,required TResult Function( RpcConfig config)  rpc,}) {final _that = this;
+switch (_that) {
+case BlockchainConfig_Electrum():
+return electrum(_that.config);case BlockchainConfig_Esplora():
+return esplora(_that.config);case BlockchainConfig_Rpc():
+return rpc(_that.config);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( ElectrumConfig config)?  electrum,TResult? Function( EsploraConfig config)?  esplora,TResult? Function( RpcConfig config)?  rpc,}) {final _that = this;
+switch (_that) {
+case BlockchainConfig_Electrum() when electrum != null:
+return electrum(_that.config);case BlockchainConfig_Esplora() when esplora != null:
+return esplora(_that.config);case BlockchainConfig_Rpc() when rpc != null:
+return rpc(_that.config);case _:
+  return null;
+
+}
+}
+
+}
 
 /// @nodoc
 

@@ -8,8 +8,9 @@ class Api {
       if (!core.instance.initialized) {
         await core.init();
       }
-    } catch (e) {
-      throw Exception("Failed to initialize bdk-flutter");
+    } catch (e, st) {
+      print('BDK init error: $e\n$st');
+      rethrow;
     }
   }
 }

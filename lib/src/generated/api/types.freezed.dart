@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -41,6 +40,148 @@ class $AddressIndexCopyWith<$Res>  {
 $AddressIndexCopyWith(AddressIndex _, $Res Function(AddressIndex) __);
 }
 
+
+/// Adds pattern-matching-related methods to [AddressIndex].
+extension AddressIndexPatterns on AddressIndex {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( AddressIndex_Increase value)?  increase,TResult Function( AddressIndex_LastUnused value)?  lastUnused,TResult Function( AddressIndex_Peek value)?  peek,TResult Function( AddressIndex_Reset value)?  reset,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case AddressIndex_Increase() when increase != null:
+return increase(_that);case AddressIndex_LastUnused() when lastUnused != null:
+return lastUnused(_that);case AddressIndex_Peek() when peek != null:
+return peek(_that);case AddressIndex_Reset() when reset != null:
+return reset(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( AddressIndex_Increase value)  increase,required TResult Function( AddressIndex_LastUnused value)  lastUnused,required TResult Function( AddressIndex_Peek value)  peek,required TResult Function( AddressIndex_Reset value)  reset,}){
+final _that = this;
+switch (_that) {
+case AddressIndex_Increase():
+return increase(_that);case AddressIndex_LastUnused():
+return lastUnused(_that);case AddressIndex_Peek():
+return peek(_that);case AddressIndex_Reset():
+return reset(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( AddressIndex_Increase value)?  increase,TResult? Function( AddressIndex_LastUnused value)?  lastUnused,TResult? Function( AddressIndex_Peek value)?  peek,TResult? Function( AddressIndex_Reset value)?  reset,}){
+final _that = this;
+switch (_that) {
+case AddressIndex_Increase() when increase != null:
+return increase(_that);case AddressIndex_LastUnused() when lastUnused != null:
+return lastUnused(_that);case AddressIndex_Peek() when peek != null:
+return peek(_that);case AddressIndex_Reset() when reset != null:
+return reset(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  increase,TResult Function()?  lastUnused,TResult Function( int index)?  peek,TResult Function( int index)?  reset,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case AddressIndex_Increase() when increase != null:
+return increase();case AddressIndex_LastUnused() when lastUnused != null:
+return lastUnused();case AddressIndex_Peek() when peek != null:
+return peek(_that.index);case AddressIndex_Reset() when reset != null:
+return reset(_that.index);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  increase,required TResult Function()  lastUnused,required TResult Function( int index)  peek,required TResult Function( int index)  reset,}) {final _that = this;
+switch (_that) {
+case AddressIndex_Increase():
+return increase();case AddressIndex_LastUnused():
+return lastUnused();case AddressIndex_Peek():
+return peek(_that.index);case AddressIndex_Reset():
+return reset(_that.index);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  increase,TResult? Function()?  lastUnused,TResult? Function( int index)?  peek,TResult? Function( int index)?  reset,}) {final _that = this;
+switch (_that) {
+case AddressIndex_Increase() when increase != null:
+return increase();case AddressIndex_LastUnused() when lastUnused != null:
+return lastUnused();case AddressIndex_Peek() when peek != null:
+return peek(_that.index);case AddressIndex_Reset() when reset != null:
+return reset(_that.index);case _:
+  return null;
+
+}
+}
+
+}
 
 /// @nodoc
 
@@ -268,6 +409,142 @@ $DatabaseConfigCopyWith(DatabaseConfig _, $Res Function(DatabaseConfig) __);
 }
 
 
+/// Adds pattern-matching-related methods to [DatabaseConfig].
+extension DatabaseConfigPatterns on DatabaseConfig {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( DatabaseConfig_Memory value)?  memory,TResult Function( DatabaseConfig_Sqlite value)?  sqlite,TResult Function( DatabaseConfig_Sled value)?  sled,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case DatabaseConfig_Memory() when memory != null:
+return memory(_that);case DatabaseConfig_Sqlite() when sqlite != null:
+return sqlite(_that);case DatabaseConfig_Sled() when sled != null:
+return sled(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( DatabaseConfig_Memory value)  memory,required TResult Function( DatabaseConfig_Sqlite value)  sqlite,required TResult Function( DatabaseConfig_Sled value)  sled,}){
+final _that = this;
+switch (_that) {
+case DatabaseConfig_Memory():
+return memory(_that);case DatabaseConfig_Sqlite():
+return sqlite(_that);case DatabaseConfig_Sled():
+return sled(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( DatabaseConfig_Memory value)?  memory,TResult? Function( DatabaseConfig_Sqlite value)?  sqlite,TResult? Function( DatabaseConfig_Sled value)?  sled,}){
+final _that = this;
+switch (_that) {
+case DatabaseConfig_Memory() when memory != null:
+return memory(_that);case DatabaseConfig_Sqlite() when sqlite != null:
+return sqlite(_that);case DatabaseConfig_Sled() when sled != null:
+return sled(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  memory,TResult Function( SqliteDbConfiguration config)?  sqlite,TResult Function( SledDbConfiguration config)?  sled,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case DatabaseConfig_Memory() when memory != null:
+return memory();case DatabaseConfig_Sqlite() when sqlite != null:
+return sqlite(_that.config);case DatabaseConfig_Sled() when sled != null:
+return sled(_that.config);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  memory,required TResult Function( SqliteDbConfiguration config)  sqlite,required TResult Function( SledDbConfiguration config)  sled,}) {final _that = this;
+switch (_that) {
+case DatabaseConfig_Memory():
+return memory();case DatabaseConfig_Sqlite():
+return sqlite(_that.config);case DatabaseConfig_Sled():
+return sled(_that.config);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  memory,TResult? Function( SqliteDbConfiguration config)?  sqlite,TResult? Function( SledDbConfiguration config)?  sled,}) {final _that = this;
+switch (_that) {
+case DatabaseConfig_Memory() when memory != null:
+return memory();case DatabaseConfig_Sqlite() when sqlite != null:
+return sqlite(_that.config);case DatabaseConfig_Sled() when sled != null:
+return sled(_that.config);case _:
+  return null;
+
+}
+}
+
+}
+
 /// @nodoc
 
 
@@ -493,6 +770,136 @@ as int,
 }
 
 
+/// Adds pattern-matching-related methods to [LockTime].
+extension LockTimePatterns on LockTime {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( LockTime_Blocks value)?  blocks,TResult Function( LockTime_Seconds value)?  seconds,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case LockTime_Blocks() when blocks != null:
+return blocks(_that);case LockTime_Seconds() when seconds != null:
+return seconds(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( LockTime_Blocks value)  blocks,required TResult Function( LockTime_Seconds value)  seconds,}){
+final _that = this;
+switch (_that) {
+case LockTime_Blocks():
+return blocks(_that);case LockTime_Seconds():
+return seconds(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( LockTime_Blocks value)?  blocks,TResult? Function( LockTime_Seconds value)?  seconds,}){
+final _that = this;
+switch (_that) {
+case LockTime_Blocks() when blocks != null:
+return blocks(_that);case LockTime_Seconds() when seconds != null:
+return seconds(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( int field0)?  blocks,TResult Function( int field0)?  seconds,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case LockTime_Blocks() when blocks != null:
+return blocks(_that.field0);case LockTime_Seconds() when seconds != null:
+return seconds(_that.field0);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( int field0)  blocks,required TResult Function( int field0)  seconds,}) {final _that = this;
+switch (_that) {
+case LockTime_Blocks():
+return blocks(_that.field0);case LockTime_Seconds():
+return seconds(_that.field0);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( int field0)?  blocks,TResult? Function( int field0)?  seconds,}) {final _that = this;
+switch (_that) {
+case LockTime_Blocks() when blocks != null:
+return blocks(_that.field0);case LockTime_Seconds() when seconds != null:
+return seconds(_that.field0);case _:
+  return null;
+
+}
+}
+
+}
+
 /// @nodoc
 
 
@@ -654,6 +1061,142 @@ class $PayloadCopyWith<$Res>  {
 $PayloadCopyWith(Payload _, $Res Function(Payload) __);
 }
 
+
+/// Adds pattern-matching-related methods to [Payload].
+extension PayloadPatterns on Payload {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Payload_PubkeyHash value)?  pubkeyHash,TResult Function( Payload_ScriptHash value)?  scriptHash,TResult Function( Payload_WitnessProgram value)?  witnessProgram,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case Payload_PubkeyHash() when pubkeyHash != null:
+return pubkeyHash(_that);case Payload_ScriptHash() when scriptHash != null:
+return scriptHash(_that);case Payload_WitnessProgram() when witnessProgram != null:
+return witnessProgram(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Payload_PubkeyHash value)  pubkeyHash,required TResult Function( Payload_ScriptHash value)  scriptHash,required TResult Function( Payload_WitnessProgram value)  witnessProgram,}){
+final _that = this;
+switch (_that) {
+case Payload_PubkeyHash():
+return pubkeyHash(_that);case Payload_ScriptHash():
+return scriptHash(_that);case Payload_WitnessProgram():
+return witnessProgram(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Payload_PubkeyHash value)?  pubkeyHash,TResult? Function( Payload_ScriptHash value)?  scriptHash,TResult? Function( Payload_WitnessProgram value)?  witnessProgram,}){
+final _that = this;
+switch (_that) {
+case Payload_PubkeyHash() when pubkeyHash != null:
+return pubkeyHash(_that);case Payload_ScriptHash() when scriptHash != null:
+return scriptHash(_that);case Payload_WitnessProgram() when witnessProgram != null:
+return witnessProgram(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String pubkeyHash)?  pubkeyHash,TResult Function( String scriptHash)?  scriptHash,TResult Function( WitnessVersion version,  Uint8List program)?  witnessProgram,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case Payload_PubkeyHash() when pubkeyHash != null:
+return pubkeyHash(_that.pubkeyHash);case Payload_ScriptHash() when scriptHash != null:
+return scriptHash(_that.scriptHash);case Payload_WitnessProgram() when witnessProgram != null:
+return witnessProgram(_that.version,_that.program);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String pubkeyHash)  pubkeyHash,required TResult Function( String scriptHash)  scriptHash,required TResult Function( WitnessVersion version,  Uint8List program)  witnessProgram,}) {final _that = this;
+switch (_that) {
+case Payload_PubkeyHash():
+return pubkeyHash(_that.pubkeyHash);case Payload_ScriptHash():
+return scriptHash(_that.scriptHash);case Payload_WitnessProgram():
+return witnessProgram(_that.version,_that.program);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String pubkeyHash)?  pubkeyHash,TResult? Function( String scriptHash)?  scriptHash,TResult? Function( WitnessVersion version,  Uint8List program)?  witnessProgram,}) {final _that = this;
+switch (_that) {
+case Payload_PubkeyHash() when pubkeyHash != null:
+return pubkeyHash(_that.pubkeyHash);case Payload_ScriptHash() when scriptHash != null:
+return scriptHash(_that.scriptHash);case Payload_WitnessProgram() when witnessProgram != null:
+return witnessProgram(_that.version,_that.program);case _:
+  return null;
+
+}
+}
+
+}
 
 /// @nodoc
 
@@ -918,6 +1461,142 @@ as String,
 }
 
 
+/// Adds pattern-matching-related methods to [PkOrF].
+extension PkOrFPatterns on PkOrF {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( PkOrF_Pubkey value)?  pubkey,TResult Function( PkOrF_XOnlyPubkey value)?  xOnlyPubkey,TResult Function( PkOrF_Fingerprint value)?  fingerprint,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case PkOrF_Pubkey() when pubkey != null:
+return pubkey(_that);case PkOrF_XOnlyPubkey() when xOnlyPubkey != null:
+return xOnlyPubkey(_that);case PkOrF_Fingerprint() when fingerprint != null:
+return fingerprint(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( PkOrF_Pubkey value)  pubkey,required TResult Function( PkOrF_XOnlyPubkey value)  xOnlyPubkey,required TResult Function( PkOrF_Fingerprint value)  fingerprint,}){
+final _that = this;
+switch (_that) {
+case PkOrF_Pubkey():
+return pubkey(_that);case PkOrF_XOnlyPubkey():
+return xOnlyPubkey(_that);case PkOrF_Fingerprint():
+return fingerprint(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( PkOrF_Pubkey value)?  pubkey,TResult? Function( PkOrF_XOnlyPubkey value)?  xOnlyPubkey,TResult? Function( PkOrF_Fingerprint value)?  fingerprint,}){
+final _that = this;
+switch (_that) {
+case PkOrF_Pubkey() when pubkey != null:
+return pubkey(_that);case PkOrF_XOnlyPubkey() when xOnlyPubkey != null:
+return xOnlyPubkey(_that);case PkOrF_Fingerprint() when fingerprint != null:
+return fingerprint(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( String value)?  pubkey,TResult Function( String value)?  xOnlyPubkey,TResult Function( String value)?  fingerprint,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case PkOrF_Pubkey() when pubkey != null:
+return pubkey(_that.value);case PkOrF_XOnlyPubkey() when xOnlyPubkey != null:
+return xOnlyPubkey(_that.value);case PkOrF_Fingerprint() when fingerprint != null:
+return fingerprint(_that.value);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( String value)  pubkey,required TResult Function( String value)  xOnlyPubkey,required TResult Function( String value)  fingerprint,}) {final _that = this;
+switch (_that) {
+case PkOrF_Pubkey():
+return pubkey(_that.value);case PkOrF_XOnlyPubkey():
+return xOnlyPubkey(_that.value);case PkOrF_Fingerprint():
+return fingerprint(_that.value);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( String value)?  pubkey,TResult? Function( String value)?  xOnlyPubkey,TResult? Function( String value)?  fingerprint,}) {final _that = this;
+switch (_that) {
+case PkOrF_Pubkey() when pubkey != null:
+return pubkey(_that.value);case PkOrF_XOnlyPubkey() when xOnlyPubkey != null:
+return xOnlyPubkey(_that.value);case PkOrF_Fingerprint() when fingerprint != null:
+return fingerprint(_that.value);case _:
+  return null;
+
+}
+}
+
+}
+
 /// @nodoc
 
 
@@ -1146,6 +1825,136 @@ $RbfValueCopyWith(RbfValue _, $Res Function(RbfValue) __);
 }
 
 
+/// Adds pattern-matching-related methods to [RbfValue].
+extension RbfValuePatterns on RbfValue {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( RbfValue_RbfDefault value)?  rbfDefault,TResult Function( RbfValue_Value value)?  value,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case RbfValue_RbfDefault() when rbfDefault != null:
+return rbfDefault(_that);case RbfValue_Value() when value != null:
+return value(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( RbfValue_RbfDefault value)  rbfDefault,required TResult Function( RbfValue_Value value)  value,}){
+final _that = this;
+switch (_that) {
+case RbfValue_RbfDefault():
+return rbfDefault(_that);case RbfValue_Value():
+return value(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( RbfValue_RbfDefault value)?  rbfDefault,TResult? Function( RbfValue_Value value)?  value,}){
+final _that = this;
+switch (_that) {
+case RbfValue_RbfDefault() when rbfDefault != null:
+return rbfDefault(_that);case RbfValue_Value() when value != null:
+return value(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function()?  rbfDefault,TResult Function( int field0)?  value,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case RbfValue_RbfDefault() when rbfDefault != null:
+return rbfDefault();case RbfValue_Value() when value != null:
+return value(_that.field0);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function()  rbfDefault,required TResult Function( int field0)  value,}) {final _that = this;
+switch (_that) {
+case RbfValue_RbfDefault():
+return rbfDefault();case RbfValue_Value():
+return value(_that.field0);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function()?  rbfDefault,TResult? Function( int field0)?  value,}) {final _that = this;
+switch (_that) {
+case RbfValue_RbfDefault() when rbfDefault != null:
+return rbfDefault();case RbfValue_Value() when value != null:
+return value(_that.field0);case _:
+  return null;
+
+}
+}
+
+}
+
 /// @nodoc
 
 
@@ -1273,6 +2082,148 @@ class $SatisfactionCopyWith<$Res>  {
 $SatisfactionCopyWith(Satisfaction _, $Res Function(Satisfaction) __);
 }
 
+
+/// Adds pattern-matching-related methods to [Satisfaction].
+extension SatisfactionPatterns on Satisfaction {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Satisfaction_Partial value)?  partial,TResult Function( Satisfaction_PartialComplete value)?  partialComplete,TResult Function( Satisfaction_Complete value)?  complete,TResult Function( Satisfaction_None value)?  none,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case Satisfaction_Partial() when partial != null:
+return partial(_that);case Satisfaction_PartialComplete() when partialComplete != null:
+return partialComplete(_that);case Satisfaction_Complete() when complete != null:
+return complete(_that);case Satisfaction_None() when none != null:
+return none(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Satisfaction_Partial value)  partial,required TResult Function( Satisfaction_PartialComplete value)  partialComplete,required TResult Function( Satisfaction_Complete value)  complete,required TResult Function( Satisfaction_None value)  none,}){
+final _that = this;
+switch (_that) {
+case Satisfaction_Partial():
+return partial(_that);case Satisfaction_PartialComplete():
+return partialComplete(_that);case Satisfaction_Complete():
+return complete(_that);case Satisfaction_None():
+return none(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Satisfaction_Partial value)?  partial,TResult? Function( Satisfaction_PartialComplete value)?  partialComplete,TResult? Function( Satisfaction_Complete value)?  complete,TResult? Function( Satisfaction_None value)?  none,}){
+final _that = this;
+switch (_that) {
+case Satisfaction_Partial() when partial != null:
+return partial(_that);case Satisfaction_PartialComplete() when partialComplete != null:
+return partialComplete(_that);case Satisfaction_Complete() when complete != null:
+return complete(_that);case Satisfaction_None() when none != null:
+return none(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( BigInt n,  BigInt m,  Uint64List items,  bool? sorted,  Map<int, List<Condition>> conditions)?  partial,TResult Function( BigInt n,  BigInt m,  Uint64List items,  bool? sorted,  Map<Uint32List, List<Condition>> conditions)?  partialComplete,TResult Function( Condition condition)?  complete,TResult Function( String msg)?  none,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case Satisfaction_Partial() when partial != null:
+return partial(_that.n,_that.m,_that.items,_that.sorted,_that.conditions);case Satisfaction_PartialComplete() when partialComplete != null:
+return partialComplete(_that.n,_that.m,_that.items,_that.sorted,_that.conditions);case Satisfaction_Complete() when complete != null:
+return complete(_that.condition);case Satisfaction_None() when none != null:
+return none(_that.msg);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( BigInt n,  BigInt m,  Uint64List items,  bool? sorted,  Map<int, List<Condition>> conditions)  partial,required TResult Function( BigInt n,  BigInt m,  Uint64List items,  bool? sorted,  Map<Uint32List, List<Condition>> conditions)  partialComplete,required TResult Function( Condition condition)  complete,required TResult Function( String msg)  none,}) {final _that = this;
+switch (_that) {
+case Satisfaction_Partial():
+return partial(_that.n,_that.m,_that.items,_that.sorted,_that.conditions);case Satisfaction_PartialComplete():
+return partialComplete(_that.n,_that.m,_that.items,_that.sorted,_that.conditions);case Satisfaction_Complete():
+return complete(_that.condition);case Satisfaction_None():
+return none(_that.msg);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( BigInt n,  BigInt m,  Uint64List items,  bool? sorted,  Map<int, List<Condition>> conditions)?  partial,TResult? Function( BigInt n,  BigInt m,  Uint64List items,  bool? sorted,  Map<Uint32List, List<Condition>> conditions)?  partialComplete,TResult? Function( Condition condition)?  complete,TResult? Function( String msg)?  none,}) {final _that = this;
+switch (_that) {
+case Satisfaction_Partial() when partial != null:
+return partial(_that.n,_that.m,_that.items,_that.sorted,_that.conditions);case Satisfaction_PartialComplete() when partialComplete != null:
+return partialComplete(_that.n,_that.m,_that.items,_that.sorted,_that.conditions);case Satisfaction_Complete() when complete != null:
+return complete(_that.condition);case Satisfaction_None() when none != null:
+return none(_that.msg);case _:
+  return null;
+
+}
+}
+
+}
 
 /// @nodoc
 
@@ -1595,6 +2546,184 @@ class $SatisfiableItemCopyWith<$Res>  {
 $SatisfiableItemCopyWith(SatisfiableItem _, $Res Function(SatisfiableItem) __);
 }
 
+
+/// Adds pattern-matching-related methods to [SatisfiableItem].
+extension SatisfiableItemPatterns on SatisfiableItem {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( SatisfiableItem_EcdsaSignature value)?  ecdsaSignature,TResult Function( SatisfiableItem_SchnorrSignature value)?  schnorrSignature,TResult Function( SatisfiableItem_Sha256Preimage value)?  sha256Preimage,TResult Function( SatisfiableItem_Hash256Preimage value)?  hash256Preimage,TResult Function( SatisfiableItem_Ripemd160Preimage value)?  ripemd160Preimage,TResult Function( SatisfiableItem_Hash160Preimage value)?  hash160Preimage,TResult Function( SatisfiableItem_AbsoluteTimelock value)?  absoluteTimelock,TResult Function( SatisfiableItem_RelativeTimelock value)?  relativeTimelock,TResult Function( SatisfiableItem_Multisig value)?  multisig,TResult Function( SatisfiableItem_Thresh value)?  thresh,required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case SatisfiableItem_EcdsaSignature() when ecdsaSignature != null:
+return ecdsaSignature(_that);case SatisfiableItem_SchnorrSignature() when schnorrSignature != null:
+return schnorrSignature(_that);case SatisfiableItem_Sha256Preimage() when sha256Preimage != null:
+return sha256Preimage(_that);case SatisfiableItem_Hash256Preimage() when hash256Preimage != null:
+return hash256Preimage(_that);case SatisfiableItem_Ripemd160Preimage() when ripemd160Preimage != null:
+return ripemd160Preimage(_that);case SatisfiableItem_Hash160Preimage() when hash160Preimage != null:
+return hash160Preimage(_that);case SatisfiableItem_AbsoluteTimelock() when absoluteTimelock != null:
+return absoluteTimelock(_that);case SatisfiableItem_RelativeTimelock() when relativeTimelock != null:
+return relativeTimelock(_that);case SatisfiableItem_Multisig() when multisig != null:
+return multisig(_that);case SatisfiableItem_Thresh() when thresh != null:
+return thresh(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( SatisfiableItem_EcdsaSignature value)  ecdsaSignature,required TResult Function( SatisfiableItem_SchnorrSignature value)  schnorrSignature,required TResult Function( SatisfiableItem_Sha256Preimage value)  sha256Preimage,required TResult Function( SatisfiableItem_Hash256Preimage value)  hash256Preimage,required TResult Function( SatisfiableItem_Ripemd160Preimage value)  ripemd160Preimage,required TResult Function( SatisfiableItem_Hash160Preimage value)  hash160Preimage,required TResult Function( SatisfiableItem_AbsoluteTimelock value)  absoluteTimelock,required TResult Function( SatisfiableItem_RelativeTimelock value)  relativeTimelock,required TResult Function( SatisfiableItem_Multisig value)  multisig,required TResult Function( SatisfiableItem_Thresh value)  thresh,}){
+final _that = this;
+switch (_that) {
+case SatisfiableItem_EcdsaSignature():
+return ecdsaSignature(_that);case SatisfiableItem_SchnorrSignature():
+return schnorrSignature(_that);case SatisfiableItem_Sha256Preimage():
+return sha256Preimage(_that);case SatisfiableItem_Hash256Preimage():
+return hash256Preimage(_that);case SatisfiableItem_Ripemd160Preimage():
+return ripemd160Preimage(_that);case SatisfiableItem_Hash160Preimage():
+return hash160Preimage(_that);case SatisfiableItem_AbsoluteTimelock():
+return absoluteTimelock(_that);case SatisfiableItem_RelativeTimelock():
+return relativeTimelock(_that);case SatisfiableItem_Multisig():
+return multisig(_that);case SatisfiableItem_Thresh():
+return thresh(_that);}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( SatisfiableItem_EcdsaSignature value)?  ecdsaSignature,TResult? Function( SatisfiableItem_SchnorrSignature value)?  schnorrSignature,TResult? Function( SatisfiableItem_Sha256Preimage value)?  sha256Preimage,TResult? Function( SatisfiableItem_Hash256Preimage value)?  hash256Preimage,TResult? Function( SatisfiableItem_Ripemd160Preimage value)?  ripemd160Preimage,TResult? Function( SatisfiableItem_Hash160Preimage value)?  hash160Preimage,TResult? Function( SatisfiableItem_AbsoluteTimelock value)?  absoluteTimelock,TResult? Function( SatisfiableItem_RelativeTimelock value)?  relativeTimelock,TResult? Function( SatisfiableItem_Multisig value)?  multisig,TResult? Function( SatisfiableItem_Thresh value)?  thresh,}){
+final _that = this;
+switch (_that) {
+case SatisfiableItem_EcdsaSignature() when ecdsaSignature != null:
+return ecdsaSignature(_that);case SatisfiableItem_SchnorrSignature() when schnorrSignature != null:
+return schnorrSignature(_that);case SatisfiableItem_Sha256Preimage() when sha256Preimage != null:
+return sha256Preimage(_that);case SatisfiableItem_Hash256Preimage() when hash256Preimage != null:
+return hash256Preimage(_that);case SatisfiableItem_Ripemd160Preimage() when ripemd160Preimage != null:
+return ripemd160Preimage(_that);case SatisfiableItem_Hash160Preimage() when hash160Preimage != null:
+return hash160Preimage(_that);case SatisfiableItem_AbsoluteTimelock() when absoluteTimelock != null:
+return absoluteTimelock(_that);case SatisfiableItem_RelativeTimelock() when relativeTimelock != null:
+return relativeTimelock(_that);case SatisfiableItem_Multisig() when multisig != null:
+return multisig(_that);case SatisfiableItem_Thresh() when thresh != null:
+return thresh(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( PkOrF key)?  ecdsaSignature,TResult Function( PkOrF key)?  schnorrSignature,TResult Function( String hash)?  sha256Preimage,TResult Function( String hash)?  hash256Preimage,TResult Function( String hash)?  ripemd160Preimage,TResult Function( String hash)?  hash160Preimage,TResult Function( LockTime value)?  absoluteTimelock,TResult Function( int value)?  relativeTimelock,TResult Function( List<PkOrF> keys,  BigInt threshold)?  multisig,TResult Function( List<BdkPolicy> items,  BigInt threshold)?  thresh,required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case SatisfiableItem_EcdsaSignature() when ecdsaSignature != null:
+return ecdsaSignature(_that.key);case SatisfiableItem_SchnorrSignature() when schnorrSignature != null:
+return schnorrSignature(_that.key);case SatisfiableItem_Sha256Preimage() when sha256Preimage != null:
+return sha256Preimage(_that.hash);case SatisfiableItem_Hash256Preimage() when hash256Preimage != null:
+return hash256Preimage(_that.hash);case SatisfiableItem_Ripemd160Preimage() when ripemd160Preimage != null:
+return ripemd160Preimage(_that.hash);case SatisfiableItem_Hash160Preimage() when hash160Preimage != null:
+return hash160Preimage(_that.hash);case SatisfiableItem_AbsoluteTimelock() when absoluteTimelock != null:
+return absoluteTimelock(_that.value);case SatisfiableItem_RelativeTimelock() when relativeTimelock != null:
+return relativeTimelock(_that.value);case SatisfiableItem_Multisig() when multisig != null:
+return multisig(_that.keys,_that.threshold);case SatisfiableItem_Thresh() when thresh != null:
+return thresh(_that.items,_that.threshold);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( PkOrF key)  ecdsaSignature,required TResult Function( PkOrF key)  schnorrSignature,required TResult Function( String hash)  sha256Preimage,required TResult Function( String hash)  hash256Preimage,required TResult Function( String hash)  ripemd160Preimage,required TResult Function( String hash)  hash160Preimage,required TResult Function( LockTime value)  absoluteTimelock,required TResult Function( int value)  relativeTimelock,required TResult Function( List<PkOrF> keys,  BigInt threshold)  multisig,required TResult Function( List<BdkPolicy> items,  BigInt threshold)  thresh,}) {final _that = this;
+switch (_that) {
+case SatisfiableItem_EcdsaSignature():
+return ecdsaSignature(_that.key);case SatisfiableItem_SchnorrSignature():
+return schnorrSignature(_that.key);case SatisfiableItem_Sha256Preimage():
+return sha256Preimage(_that.hash);case SatisfiableItem_Hash256Preimage():
+return hash256Preimage(_that.hash);case SatisfiableItem_Ripemd160Preimage():
+return ripemd160Preimage(_that.hash);case SatisfiableItem_Hash160Preimage():
+return hash160Preimage(_that.hash);case SatisfiableItem_AbsoluteTimelock():
+return absoluteTimelock(_that.value);case SatisfiableItem_RelativeTimelock():
+return relativeTimelock(_that.value);case SatisfiableItem_Multisig():
+return multisig(_that.keys,_that.threshold);case SatisfiableItem_Thresh():
+return thresh(_that.items,_that.threshold);}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( PkOrF key)?  ecdsaSignature,TResult? Function( PkOrF key)?  schnorrSignature,TResult? Function( String hash)?  sha256Preimage,TResult? Function( String hash)?  hash256Preimage,TResult? Function( String hash)?  ripemd160Preimage,TResult? Function( String hash)?  hash160Preimage,TResult? Function( LockTime value)?  absoluteTimelock,TResult? Function( int value)?  relativeTimelock,TResult? Function( List<PkOrF> keys,  BigInt threshold)?  multisig,TResult? Function( List<BdkPolicy> items,  BigInt threshold)?  thresh,}) {final _that = this;
+switch (_that) {
+case SatisfiableItem_EcdsaSignature() when ecdsaSignature != null:
+return ecdsaSignature(_that.key);case SatisfiableItem_SchnorrSignature() when schnorrSignature != null:
+return schnorrSignature(_that.key);case SatisfiableItem_Sha256Preimage() when sha256Preimage != null:
+return sha256Preimage(_that.hash);case SatisfiableItem_Hash256Preimage() when hash256Preimage != null:
+return hash256Preimage(_that.hash);case SatisfiableItem_Ripemd160Preimage() when ripemd160Preimage != null:
+return ripemd160Preimage(_that.hash);case SatisfiableItem_Hash160Preimage() when hash160Preimage != null:
+return hash160Preimage(_that.hash);case SatisfiableItem_AbsoluteTimelock() when absoluteTimelock != null:
+return absoluteTimelock(_that.value);case SatisfiableItem_RelativeTimelock() when relativeTimelock != null:
+return relativeTimelock(_that.value);case SatisfiableItem_Multisig() when multisig != null:
+return multisig(_that.keys,_that.threshold);case SatisfiableItem_Thresh() when thresh != null:
+return thresh(_that.items,_that.threshold);case _:
+  return null;
+
+}
+}
+
+}
 
 /// @nodoc
 
